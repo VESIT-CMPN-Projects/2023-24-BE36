@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/itemImageIv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorGray02"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_white"
+            style="@style/ImageStyle_Corners_Rounded"/>
+
+        <TextView
+            android:id="@+id/itemNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/itemImageIv"
+            android:ellipsize="end"
+            android:fontFamily="@font/adamina"
+            android:maxLines="1"
+            android:text="ItemName"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/itemConditionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemNameTv"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/itemImageIv"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="As New"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemCategoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemNameTv"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/itemConditionTv"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Category"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/itemBrandTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemConditionTv"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/itemImageIv"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Philips"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemPriceLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemBrandTv"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toEndOf="@id/itemImageIv"
+            android:text="@string/price_symbol"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/itemPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemBrandTv"
+            android:layout_toEndOf="@id/itemPriceLabelTv"
+            android:layout_marginTop="4dp"
+            android:text="00"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/taxTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemBrandTv"
+            android:layout_toEndOf="@id/itemPriceTv"
+            android:layout_alignBaseline="@id/itemPriceTv"
+            android:layout_marginTop="4dp"
+            android:text="+Rs.50(Insurance)"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/itemRentPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemPriceTv"
+            android:layout_toRightOf="@id/itemImageIv"
+            android:layout_marginLeft="10dp"
+            android:text="(For 90 Days)"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/itemAddedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemPriceTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/aladin"
+            android:text="dd/MM/yyyy"
+            android:textColor="#FF9800"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView >
